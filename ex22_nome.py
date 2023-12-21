@@ -1,0 +1,8 @@
+nome = input('Digite seu nome:').strip()
+print('Analisando o seu nome...')
+print('Seu nome em letras maiusculas é {}'.format(nome.upper()))
+print('Seu nome em letras minusculas é {}'.format(nome.lower()))
+nome_cortado = nome.split()
+qnt_letras = len(nome) - nome.count(' ')
+print('Seu nome ao todo tem {} letras'.format(qnt_letras))
+print('Seu primeiro nome é {} e ele tem {} letras'.format(nome_cortado[0], len(nome_cortado[0])))
